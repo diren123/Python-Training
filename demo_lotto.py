@@ -10,9 +10,9 @@ lotto = [] # Create Empty List
 
 while len(lotto) < 6:
     num = random.randint(1, 50)
-    if num in lotto:
-        print("Duplicate Number = ", num)
-    else:
+    if num not in lotto:
         lotto.append(num)
+    else:
+        print("Duplicate Number = ", num)
 
 print("Lottery numbers = ", lotto)
